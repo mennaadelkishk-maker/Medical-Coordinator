@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Map medical to Rose Theme */
+  --color-medical-50: #FFF1F2;
+  --color-medical-100: #FFE4E6;
+  --color-medical-200: #FECDD3;
+  --color-medical-300: #FDA4AF;
+  --color-medical-400: #FB7185;
+  --color-medical-500: #F43F5E;
+  --color-medical-600: #E11D48;
+  --color-medical-700: #BE123C;
+  --color-medical-800: #9F1239;
+  --color-medical-900: #881337;
+
+  /* Map primary to Slate Theme */
+  --color-primary-50: #F8FAFC;
+  --color-primary-100: #F1F5F9;
+  --color-primary-200: #E2E8F0;
+  --color-primary-300: #CBD5E1;
+  --color-primary-400: #94A3B8;
+  --color-primary-500: #64748B;
+  --color-primary-600: #475569;
+  --color-primary-700: #334155;
+  --color-primary-800: #1E293B;
+  --color-primary-900: #0F172A;
+
+  /* Override Tailwind slate to match our primary theme */
+  --color-slate-50: var(--color-primary-50);
+  --color-slate-100: var(--color-primary-100);
+  --color-slate-200: var(--color-primary-200);
+  --color-slate-300: var(--color-primary-300);
+  --color-slate-400: var(--color-primary-400);
+  --color-slate-500: var(--color-primary-500);
+  --color-slate-600: var(--color-primary-600);
+  --color-slate-700: var(--color-primary-700);
+  --color-slate-800: var(--color-primary-800);
+  --color-slate-900: var(--color-primary-900);
+}
+
+body {
+  @apply bg-[#FDFCFB] text-[#1E293B] font-sans;
+}
+

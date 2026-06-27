@@ -1,0 +1,8 @@
+{
+  "name": "Medical Coordinator",
+  "description": "Professional portfolio for a Medical Clinic Coordinator and Digital Marketing Specialist, built with React, Tailwind, and Supabase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
