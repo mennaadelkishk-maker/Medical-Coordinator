@@ -58,29 +58,13 @@ export default function AdminLogin() {
         )}
 
         {isSupabaseConfigured && (
-          <div className="space-y-4 mb-6">
-            <div className="p-4 bg-emerald-50 text-emerald-800 text-sm rounded-xl border border-emerald-200 text-center flex flex-col items-center gap-1">
-              <span className="font-bold flex items-center gap-1">
-                🟢 متصل بقاعدة بيانات Supabase بنجاح!
-              </span>
-              <span className="text-xs text-emerald-600">
-                تم تفعيل الاتصال الحقيقي وقاعدة البيانات جاهزة للعمل ومحمية.
-              </span>
-            </div>
-
-            <div className="p-4 bg-blue-50/80 text-blue-900 text-xs rounded-xl border border-blue-200 leading-relaxed text-right" dir="rtl">
-              <h4 className="font-bold text-sm text-blue-950 mb-1">💡 هل يظهر لك خطأ المفتاح السري (Secret Key)؟</h4>
-              <p className="mb-2">
-                إذا ظهرت لك رسالة <code className="bg-blue-100/80 px-1 py-0.5 rounded text-blue-950 font-mono">Forbidden use of secret API key...</code> عند محاولة تسجيل الدخول، فهذا يعني أنك استخدمت مفتاح الخدمة السري <strong>(service_role)</strong> بدلاً من المفتاح العام.
-              </p>
-              <h5 className="font-bold mb-1">طريقة الحل السريعة:</h5>
-              <ol className="list-decimal list-inside space-y-1 text-blue-800">
-                <li>اذهب إلى لوحة تحكم <strong>Supabase</strong> الخاصة بك ثم <strong>Project Settings</strong> ثم <strong>API</strong>.</li>
-                <li>انسخ المفتاح المكتوب تحته <strong className="text-blue-950">anon (public)</strong>.</li>
-                <li>افتح قائمة <strong>Settings</strong> في AI Studio ثم اذهب إلى <strong>Secrets</strong>.</li>
-                <li>استبدل قيمة <code className="bg-blue-100/80 px-1 py-0.5 rounded text-blue-950 font-mono">VITE_SUPABASE_ANON_KEY</code> بالمفتاح العام الذي نسخته واحفظ التغييرات.</li>
-              </ol>
-            </div>
+          <div className="mb-6 p-4 bg-emerald-50 text-emerald-800 text-sm rounded-xl border border-emerald-200 text-center flex flex-col items-center gap-1">
+            <span className="font-bold flex items-center gap-1">
+              🟢 متصل بقاعدة بيانات Supabase بنجاح!
+            </span>
+            <span className="text-xs text-emerald-600">
+              تم تفعيل الاتصال الحقيقي وقاعدة البيانات جاهزة للعمل ومحمية.
+            </span>
           </div>
         )}
 
